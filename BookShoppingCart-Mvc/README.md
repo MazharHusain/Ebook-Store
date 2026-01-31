@@ -1,88 +1,20 @@
-# BookShoppingCartMvc (A basic e-comm system for beginners)📚🛒
+# Ebook Store (An  e-comm system for enterprise)📚🛒
 
-It is a source code of the youtube tutorial on [Build a Full E-commerce Application Using .NET Core 9, SQL Server, MVC | Complete Tutorial](https://youtu.be/_NzPJSofid8?si=jHuiACNd3dxzT1Go). Initially it was designed to explain how shopping cart 🛒 works in dot net core mvc. But now it has more features except payment gateway. A ⭐ in repository is highly appreciated, helps to promote my content.
-
-📢 Initially , this project was built with .net 7. But it is **Upgraded to .net 9.0.** now and I will try to keep it up to date.
 
 ## Tech stack 🧑‍💻
 
-   - Dotnet core mvc (.Net 9)
+   - Dotnet core mvc (.Net 10)
    - MS SQLServer 2022 (Database)
    - Entity Framework Core (ORM)
    - Identity Core (Authentication)
    - Bootstrap 5 (frontend)
 
-## Tools I have used and their alternative
+## Tools I have used
 
-- Visual Studio 2022 (Alternatives : .NET SDK + VS Code or .NET SDK + JetBrains Rider).
-- Microsoft Sql Server Management Studio (Alternative : mssql extension for vscode / dbeaver).
-- Instead of manually installing `sql server`, you can also used `sql server` which is spun up in `docker`.
+- Visual Studio 2026 Insiders.
+- Microsoft Sql Server Management Studio.
 
-**Note:** Every tool and tech is free for personal use. 
-
-## Video tutorial 📺
-
-[Build a Full E-commerce Application Using .NET Core 9, SQL Server, MVC | Complete Tutorial](https://youtu.be/_NzPJSofid8?si=jHuiACNd3dxzT1Go)
-
-## How to run the project?🌐
-
-### 1. With docker compse (Quickest way)
-
-It is the quickest way to run the application. You don't need to install anything on your system, except docker. Make sure you have installed `Docker` in your machine. Now, run the following command
-
-```bash
-docker compose up -d
-```
-
-- Your application will be served at `http://localhost:8080/`.
-- Admin's `username` and `password` is given below (How to logged-in with admin account??🧑‍💻🧑‍💻).
-
-**Note:** If you want to debug application and want to modify the project, I would recommend to follow the second approach.
-
-### 2. Manually setup every thing (Recommended for developers)
-
-Make sure:
-- Dotnet sdk 9.0 or VisualStudio is installed in your machine
-- Sql server is installed or spun up in docker container
-
-Now, you can follow these steps:
-
-1. Open the command prompt. Go to a directory where you want to clone this project. Use this command to clone the project.
-
-```bash
-git clone https://github.com/rd003/BookShoppingCart-Mvc
-```
-
-2. Go to the directory where you have cloned this project, open the directory `BookShoppingCart-Mvc`. You will find a file with name `BookShoppingCartMvc.sln`. Double click on this file and this project will be opened in Visual Studio.
-
-3. Open `appsettings.json` file and update connection string.
-
-```json
-"ConnectionStrings": {
-  "conn": "data source=your_server_name;initial catalog=MovieStoreMvc; integrated security=true;encrypt=false"
-}
-```
-
-**Note:** It is not mandatory to install `sql server 2022` in your machine. You can spin up the `sql server` in docker container and use that for this application. But in this case your connection string will be different `Server=localhost,1433;Database=BookShoppingCartMvc;User Id=sa;Password=your_password;TrustServerCertificate=True`.
-
-4. Run the project.
-
-📢 When you run the project for the first time, it will do following things:
-
-- It will generate the database
-- It will seed some data
-- It will create an account for `admin`
-
-## How to logged-in with admin account?? 🧑‍💻🧑‍💻
-
-Click on the link named `login` and get logged-in with these credentials.
-
-```text
-username: admin@gmail.com
-
-password: Admin@123
-```
-
+- 
 ## Screenshots
 
 1.Homepage
@@ -175,15 +107,3 @@ password: Admin@123
 
 ## Thanks
 
-If you find this repository useful, then consider to leave a ⭐.
-
-Connect with me
-
-👉 YouTube: <https://youtube.com/@ravindradevrani>
-
-👉 Twitter: <https://twitter.com/ravi_devrani>
-
-Become a supporter ❣️:
-You can buy me a coffee 🍵 : <https://www.buymeacoffee.com/ravindradevrani>
-
-Thanks a lot 🙂🙂
